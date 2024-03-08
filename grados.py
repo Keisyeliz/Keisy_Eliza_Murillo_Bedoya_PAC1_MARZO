@@ -1,14 +1,15 @@
 
 while True:
     temperaturaFlt = float(input("Ingrese una temperatura: "))
-    unidad = input("Ingrese la unidad de medida (C/F): ")
-
-    if unidad.upper() == "C":
+    var_unidad = input("Ingrese la unidad de medida (C/F): ")
+    
+    if var_unidad== "C":
         fahrenheit = (temperaturaFlt * 9/5) + 32
-        print(f"{temperaturaFlt}°C equivale a {fahrenheit}°F")
-    elif unidad.upper() == "F":
+        print('La temperatura',temperaturaFlt,'°C', 'equivale a :', fahrenheit,'°F')
+
+    elif var_unidad== "F":
         celsius = (temperaturaFlt - 32) * 5/9
-        print(f"{temperaturaFlt}°F equivale a {celsius}°C")
+        print('La temperatura ',temperaturaFlt,'°F', 'equivale a ',celsius,'°C')
     else:
-        print("Unidad de medida inválida")
+        print('Unidad de medida inválida')
     print('Proceso finalizado')
